@@ -1,0 +1,8 @@
+{
+	"Changelist" : 3172292,
+	"BuildId" : "d4db14d2-4581-4759-87c5-9c3a07ae85bc",
+	"Modules" : 
+	{
+		"SceneCaptureCubeHDRRenderPlugin" : "UE4Editor-SceneCaptureCubeHDRRenderPlugin.dll"
+	}
+}
