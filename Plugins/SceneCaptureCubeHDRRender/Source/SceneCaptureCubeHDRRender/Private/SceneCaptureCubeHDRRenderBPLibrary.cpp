@@ -53,3 +53,10 @@ void USceneCaptureCubeHDRRenderBPLibrary::ExportRenderTargetCube(UObject* WorldC
 	}
 }
 
+void USceneCaptureCubeHDRRenderBPLibrary::ExportRenderTarget2DSet(UObject* WorldContextObject, UTextureRenderTargetCube* TextureRenderTarget, const FString& FilePath, const FString& FileName)
+{
+
+}
+
+
+
