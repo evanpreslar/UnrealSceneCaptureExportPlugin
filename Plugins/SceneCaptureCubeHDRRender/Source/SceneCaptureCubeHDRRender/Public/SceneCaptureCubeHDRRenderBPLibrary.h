@@ -6,6 +6,8 @@
 #include "ImageUtils.h"
 #include "MessageLog.h"
 #include "Runtime/Engine/Classes/Engine/TextureRenderTargetCube.h"
+#include "Runtime/Engine/Classes/Kismet/KismetRenderingLibrary.h"
+#include "Runtime/Engine/Classes/Engine/SceneCapture2D.h"
 
 #include "SceneCaptureCubeHDRRenderBPLibrary.generated.h"
 
@@ -36,6 +38,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "ExportRenderTargetCube", WorldContext = "WorldContextObject"))
 		static void ExportRenderTargetCube(UObject* WorldContextObject, UTextureRenderTargetCube* TextureRenderTarget, const FString& FilePath, const FString& FileName);
 
-	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "ExportRenderTarget2DSet", WorldContext = "WorldContextObject"))
-		static void ExportRenderTarget2DSet(UObject* WorldContextObject, UTextureRenderTargetCube* TextureRenderTarget, const FString& FilePath, const FString& FileName);
+	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "ProcessAndExport2DSet", WorldContext = "WorldContextObject"))
+		static void ProcessAndExport2DSet(UObject* WorldContextObject, USceneCaptureComponent2D* SceneCapture, float EyeDistance, int NumLongitudinalSections, int NumLatitudinalSections, int RenderTargetXResolution, int RenderTargetYResolution, const FString& FilePath, const FString& BaseFileName);
 };
