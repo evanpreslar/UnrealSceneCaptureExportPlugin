@@ -53,7 +53,16 @@ void USceneCaptureCubeHDRRenderBPLibrary::ExportRenderTargetCube(UObject* WorldC
 	}
 }
 
-void USceneCaptureCubeHDRRenderBPLibrary::ProcessAndExport2DSet(UObject* WorldContextObject, USceneCaptureComponent2D* SceneCapture, float EyeDistance, int NumLongitudinalSections, int NumLatitudinalSections, int RenderTargetXResolution, int RenderTargetYResolution, const FString& FilePath, const FString& BaseFileName)
+void USceneCaptureCubeHDRRenderBPLibrary::ProcessAndExport2DSet(
+	UObject* WorldContextObject, 
+	USceneCaptureComponent2D* SceneCapture,
+	float EyeDistance, 
+	int NumLongitudinalSections, 
+	int NumLatitudinalSections, 
+	int RenderTargetXResolution, 
+	int RenderTargetYResolution, 
+	const FString& FilePath,
+	const FString& BaseFileName)
 {
 	float HorizontalStep = 360.0 / (NumLongitudinalSections);
 	float VerticalStep = 180.0 / (NumLatitudinalSections-1); /* one less division because the first and last images will not be the same view, (due to not rotating completely about Y axis) */

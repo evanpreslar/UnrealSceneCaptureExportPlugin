@@ -14,6 +14,14 @@
 		{
 			"Name": "SceneCaptureCubeHDRRender",
 			"Enabled": true
+		},
+		{
+			"Name": "SceneCapture2DArrayExporter",
+			"Enabled": false
 		}
+	],
+	"AdditionalPluginDirectories": [
+		"/../../../../../../../../UnrealSceneCaptureExportPlugin/Plugins",
+		"/UnrealSceneCaptureExportPlugin/Plugins"
 	]
 }
