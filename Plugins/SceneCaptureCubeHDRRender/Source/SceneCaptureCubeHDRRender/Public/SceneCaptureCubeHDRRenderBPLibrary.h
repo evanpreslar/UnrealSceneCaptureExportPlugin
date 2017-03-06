@@ -22,14 +22,16 @@ public:
 		static void ExportRenderTargetCube(UObject* WorldContextObject, UTextureRenderTargetCube* TextureRenderTarget, const FString& FilePath, const FString& FileName);
 
 	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "ProcessAndExport2DSet", WorldContext = "WorldContextObject"))
-		static void ProcessAndExport2DSet(
+		static void CaptureAndExport2DCaptureSet(
 			UObject* WorldContextObject, 
 			USceneCaptureComponent2D* SceneCapture, 
 			float EyeDistance, 
 			int NumLongitudinalSections, 
 			int NumLatitudinalSections, 
 			int RenderTargetXResolution, 
-			int RenderTargetYResolution, 
+			int RenderTargetYResolution,
+			float FOVAngle,
 			const FString& FilePath, 
-			const FString& BaseFileName);
+			const FString& BaseFileName,
+			int FrameNum);
 };
