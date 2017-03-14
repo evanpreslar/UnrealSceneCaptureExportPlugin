@@ -31,6 +31,6 @@ It should also be noted that in more complex projects, all SceneCapture types (n
 SceneCaptureCube Export Pipeline
 ================================
 
-The second of these functions (ExportRenderTargetCube) provides a means of exporting SceneCaptureCubes similar to the method already present for SceneCapture2D within UKismetRenderingLibrary::ExportTexture2D.
+Largely unreleated to the above function, the second included function (ExportRenderTargetCube) provides a means of exporting SceneCaptureCubes similar to the method already present for SceneCapture2D objects within UKismetRenderingLibrary::ExportTexture2D.
 The CubeRenderTargets are natively output as .hdr images in an equirectangular projection.
 
