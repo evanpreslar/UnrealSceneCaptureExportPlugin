@@ -21,7 +21,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "ExportRenderTargetCube", WorldContext = "WorldContextObject"))
 		static void ExportRenderTargetCube(UObject* WorldContextObject, UTextureRenderTargetCube* TextureRenderTarget, const FString& FilePath, const FString& FileName);
 
-	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "ProcessAndExport2DSet", WorldContext = "WorldContextObject"))
+	UFUNCTION(BlueprintCallable, Category = "RenderingPlugin", meta = (Keywords = "CaptureAndExport2DCaptureSet", WorldContext = "WorldContextObject"))
 		static void CaptureAndExport2DCaptureSet(
 			UObject* WorldContextObject, 
 			USceneCaptureComponent2D* SceneCapture, 
